@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Harida Homes</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("nav-placeholder").innerHTML = data)
+        );
+    </script>
+    <!-- <div> -->
+
+    <!-- <div title="Chat with me" class="chatType">
+      <div
+        class="chatWithMe"
+        onclick="window.open('https://wa.me/09024452537', '_blank')"
+      >
+        <img src="HaridaImages/whatsappImage.png" alt="Image 2" class="fade" />
+
+        <a>Chat with us</a>
+      </div>
+    </div> -->
+    <div id="chat-placeholder"></div>
+
+    <script>
+      fetch("chatUs.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("chat-placeholder").innerHTML = data)
+        );
+    </script>
+
+    <section class="home_section" id="home" name="Home">
+      <div class="body-carousel">
+        <div class="carousel_container">
+          <div class="carousel_slide">
+            <img src="HaridaImages/house1.png" alt="Image 2" class="fade" />
+            <img
+              src="HaridaImages/Harida house7.png"
+              alt="Image 1"
+              class="slide-in peel-off-target"
+            />
+
+            <img
+              src="HaridaImages/Harida house4.png"
+              alt="Image 4"
+              class="slide-in-bottom-target"
+            />
+
+            <img
+              src="HaridaImages/house6.png"
+              alt="Image 3"
+              class="zoom peel-off-target"
+            />
+
+            <img
+              src="HaridaImages/house 4.png"
+              alt="Image 4"
+              class="slide-in-target"
+            />
+            <img
+              src="HaridaImages/WhatsApp Image 2024-04-23 at 15.24.51.jpeg"
+              alt="Image 1"
+              class="split-target"
+            />
+            <!-- Current image to split -->
+            <img
+              src="HaridaImages/Harida house5.png"
+              alt="Image 2"
+              class="reveal-target"
+            />
+            <!-- Next image to reveal -->
+            <img src="HaridaImages/house2.png" alt="Image 4" class="rotate" />
+            <img src="HaridaImages/house6.png" alt="Image 3" class="zoom" />
+          </div>
+          <button class="prev" id="prevBtn">❮</button>
+          <button class="next" id="nextBtn">❯</button>
+        </div>
+      </div>
+      <div class="aboutUs_section">
+        <div class="aboutUs_section_div">
+          <div class="aboutUs">
+            <h3>About Harida Homes - Built with Care</h3>
+            <div class="aboutUs_div">
+              <div>
+                We are an innovative, commercial contemporary-luxury-residential
+                real estate developer.
+              </div>
+              <div>
+                <!-- Since the delivery of our first set of beautifully crafted,
+                unique and luxurious homes in 2006, we have seen our designs
+                inspire a revolution in residential architecture carrying many
+                of the signatures we introduced. Hence our reputation as the
+                pioneers of commercial contemporary luxury homes in Nigeria. -->
+                Harida Homes is your trusted partner in real estate, offering a
+                curated selection of residential and commercial properties
+                tailored to your needs. With years of experience and a
+                commitment to personalized service, we guide you through every
+                step of owning your dream home.
+              </div>
+            </div>
+            <div class="moreAboutus">
+              <div class="moreAboutus_btn">
+                <a href="about.html"> READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="aboutHaridimg">
+            <!-- <img src="HaridaImages/house 5.png" /> -->
+            <iframe
+              src="https://www.youtube.com/embed/MUNLbh1S1Wc?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="properties_section">
+        <div class="pr">
+          <div class="properties">
+            <h1>NOW SELLING</h1>
+          </div>
+
+          <div class="properties_img_div">
+            <div class="properties_img">
+              <img src="HaridaImages/house1.png" alt="Image 2" class="fade" />
+              <div class="properties_PContainer">
+                <div class="properties_P">
+                  Harida Court I is the development of beautiful residential
+                  houses in lekki county with a private swimmimg pool and it has
+                  a beautiful beach view located in Lekki County Estate. The
+                  location is touted as the new Lekki.
+                </div>
+              </div>
+
+              <div class="moreProperty_div">
+                <div class="moreProperty">
+                  <div class="moreProperty_btn">
+                    <a href="properties.html">KNOW MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_img">
+              <img
+                src="HaridaImages/Harida house5.png"
+                alt="Image 2"
+                class="fade"
+              />
+              <div class="properties_PContainer">
+                <div class="properties_P">
+                  Harida Court II is the development of beautiful residential
+                  houses in Ajah Lekki Lagos with a private swimming pool. It
+                  has a stunning beach view and is located in Lekki County
+                  Estate. The location is touted as the new Lekki.
+                </div>
+              </div>
+
+              <div class="moreProperty_div">
+                <div class="moreProperty">
+                  <div class="moreProperty_btn">
+                    <a href="properties.html">KNOW MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" style="display: none">FAQ Section</section>
+    <!-- </div> -->
+    <div></div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+
+    <script src="index.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="onGoing.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Harida Homes</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("nav-placeholder").innerHTML = data)
+        );
+    </script>
+    <div id="chat-placeholder"></div>
+
+    <script>
+      fetch("chatUs.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("chat-placeholder").innerHTML = data)
+        );
+    </script>
+    <section id="properties" class="propertiesSection">
+      <div class="aboutUsHaridimg_on">
+        <div class="aboutUsHaridText_on">
+          <div class="link_on">
+            <a href="index.html">Home</a>
+            <a>/</a>
+            <a href="properties.html">Properties</a>
+            <a>/</a>
+            <a href="onGoing.html">Ongoing</a>
+          </div>
+          <h1 class="text_gradient_on">HARIDA HOMES</h1>
+        </div>
+      </div>
+      <div class="properties_section_div">
+        <div class="ongoing_Property">
+          <h3>Ongoing</h3>
+        </div>
+
+        <div class="mainCarouselContainer">
+          <div class="carouselContainer">
+            <div class="ongoing_Property_div">
+              <h4>5 Properties</h4>
+              <div class="onProperty">
+                <h5>Sort by:</h5>
+                <select>
+                  <option>Default Order</option>
+                  <option>Price -Low to High</option>
+                  <option>Price -High to Low</option>
+                  <option>Featured Listing First</option>
+                  <option>Date -Old to New</option>
+                  <option>Date -New to Old</option>
+                </select>
+              </div>
+            </div>
+            <div class="property_sectionCarousel">
+              <!-- Carousel 1 -->
+              <div class="property_sectionCarousel_div">
+                <div class="carousel-container">
+                  <div class="carousel-slide">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <div class="buttons_3">
+                            <div class="btn">HOT OFFER</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount">
+                        <div class="amount">Starting Form 15,000,000</div>
+                        <div class="amountImg">
+                          <div class="amountImg_div" title="Favourite">
+                            <img src="HaridaImages/Vector (1).png" />
+                          </div>
+                          <div class="amountImg_div" title="Add to compare">
+                            <img src="HaridaImages/plusCircel.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+
+                <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel 2 -->
+              <div class="property_sectionCarousel_div">
+                <div class="carousel-container">
+                  <div class="carousel-slide">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <div class="buttons_3">
+                            <div class="btn">HOT OFFER</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount">
+                        <div class="amount">Starting Form 15,000,000</div>
+                        <div class="amountImg">
+                          <div class="amountImg_div" title="Favourite">
+                            <img src="HaridaImages/Vector (1).png" />
+                          </div>
+                          <div class="amountImg_div" title="Add to compare">
+                            <img src="HaridaImages/plusCircel.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+                <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="property_sectionCarousel">
+              <!-- Carousel 1 -->
+              <div class="property_sectionCarousel_div">
+                <div class="carousel-container">
+                  <div class="carousel-slide">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <div class="buttons_3">
+                            <div class="btn">HOT OFFER</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount">
+                        <div class="amount">Starting Form 15,000,000</div>
+                        <div class="amountImg">
+                          <div class="amountImg_div" title="Favourite">
+                            <img src="HaridaImages/Vector (1).png" />
+                          </div>
+                          <div class="amountImg_div" title="Add to compare">
+                            <img src="HaridaImages/plusCircel.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+
+                <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel 2 -->
+              <div class="property_sectionCarousel_div">
+                <div class="carousel-container">
+                  <div class="carousel-slide">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <div class="buttons_3">
+                            <div class="btn">HOT OFFER</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount">
+                        <div class="amount">Starting Form 15,000,000</div>
+                        <div class="amountImg">
+                          <div class="amountImg_div" title="Favourite">
+                            <img src="HaridaImages/Vector (1).png" />
+                          </div>
+                          <div class="amountImg_div" title="Add to compare">
+                            <img src="HaridaImages/plusCircel.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+                <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carouselContainer_2">
+            <div class="ongoing_Property_div">
+              <h4>Featured Properties</h4>
+            </div>
+            <div class="property_sectionCarousel_2">
+              <div class="property_sectionCarousel_div_2">
+                <div class="carousel_container_2">
+                  <div class="carousel_slide_2">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn_2">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <!-- <div class="buttons_3">
+                            <div class="btn">SOLD</div>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount_2">
+                        <div class="amount_2">Starting Form 15,000,000</div>
+                        <div class="residentials">Apartment, Residential</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+
+                <!-- <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="details_section_2">
+              <div>
+                <div class="status">
+                  <h3>Property Status</h3>
+                </div>
+                <div>
+                  <div class="status_img">
+                    <img
+                      src="HaridaImages/Vector_rightarrow.png"
+                      alt="House 3"
+                    />
+                    <a href="onGoing.html">Ongoing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="property_sectionCarousel_2">
+              <div class="property_sectionCarousel_div_2">
+                <div class="carousel_container_2">
+                  <div class="carousel_slide_2">
+                    <img src="HaridaImages/house1.png" alt="House 1" />
+                    <img src="HaridaImages/house2.png" alt="House 2" />
+                    <img src="HaridaImages/house 4.png" alt="House 3" />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay_btn_2">
+                      <div class="buttons">
+                        <div class="buttons_1">
+                          <div class="btn">Featured</div>
+                        </div>
+                        <div class="buttons_div">
+                          <div class="buttons_2">
+                            <div class="btn">ONGOING</div>
+                          </div>
+                          <!-- <div class="buttons_3">
+                            <div class="btn">SOLD</div>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay_amount">
+                      <div class="start_amount_2">
+                        <div class="amount_2">Starting Form 15,000,000</div>
+                        <div class="residentials">Apartment, Residential</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="prev_property">❮</button>
+                  <button class="next_property">❯</button>
+                </div>
+
+                <!-- <div class="details_section">
+                  <div class="residentials_div">
+                    <div class="residentials">
+                      Two3Four Residence – 2 Bedroom Apartment Lekki Phase 1
+                    </div>
+                  </div>
+                  <div class="residential">
+                    <div class="residentials">Two3Four residence</div>
+                  </div>
+                  <div class="residential_details">
+                    <div class="residentials">Apartment, Residential</div>
+                    <div class="details">Details</div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="LearnMore_container">
+          <div class="LearnMore_div" onclick="loadMoreCarousels()">
+            <div class="learnMore">Learn More</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

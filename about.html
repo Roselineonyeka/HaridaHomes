@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Harida Homes</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("nav-placeholder").innerHTML = data)
+        );
+    </script>
+
+    <div id="chat-placeholder"></div>
+
+    <script>
+      fetch("chatUs.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("chat-placeholder").innerHTML = data)
+        );
+    </script>
+    <section class="aboutUsSection" id="about-us">
+      <div>
+        <div class="aboutUsHaridimg">
+          <div class="aboutUsHaridText">
+            <div class="links">
+              <a href="index.html">Home</a>
+              <a>/</a>
+              <a href="about.html">About-Us</a>
+            </div>
+            <h1 class="text-gradient">HARIDA HOMES</h1>
+          </div>
+        </div>
+        <div class="aboutUs">
+          <h3>Learn About Our History</h3>
+        </div>
+        <div class="aboutUs">
+          <h1>
+            <a>About-<span class="highlight">Us</span></a>
+          </h1>
+        </div>
+        <div>
+          <div class="about_cards">
+            <div class="card">
+              <h2>Our Vision</h2>
+              <p>
+                To fulfill the dreams and aspirations of every client by
+                offering exceptional properties built with care and a deep
+                understanding of the real estate market.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Our Mission</h2>
+              <p>
+                To provide high-quality real estate services, focusing on client
+                satisfaction, integrity, and personalized solutions that exceed
+                expectations.
+              </p>
+            </div>
+            <div class="card">
+              <h2>What Sets Us Apart</h2>
+              <p>
+                <strong>Local Expertise:</strong> A deep understanding of Lagos'
+                real estate market. <br />
+                <strong>Diverse Portfolio:</strong> Residential, commercial,
+                tailored to client needs.<br />
+                <strong>Personalized Solutions:</strong> Customized real estate
+                services.<br />
+                <strong>Professionalism:</strong> Dedicated real estate
+                professionals delivering outstanding service.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Our Services</h2>
+              <p>
+                Harida Homes offers a full range of services including property
+                sales, rentals, property management, and investment advisory
+                services to meet all your real estate needs.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Why Choose Harida Homes?</h2>
+              <p>
+                <strong>Experience:</strong> 5 years in the real estate
+                industry.<br />
+                <strong>Client-Centric Approach:</strong> We prioritize your
+                satisfaction.<br />
+                <strong>Trusted Reputation:</strong> Built on integrity and
+                successful transactions.<br />
+                <strong>Commitment to Excellence:</strong> Delivering
+                high-quality properties and services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="properties_section">
+          <div class="pr">
+            <div class="properties">
+              <h1>NOW SELLING</h1>
+            </div>
+
+            <div class="properties_img_div">
+              <div class="properties_img">
+                <img src="HaridaImages/house1.png" alt="Image 2" class="fade" />
+                <div class="properties_PContainer">
+                  <div class="properties_P">
+                    Harida Court 1 is the development of a beautiful residential
+                    houses in lekki county with a private swimmimg pool and it
+                    has a beautiful beach view located in Lekki County Estate.
+                    The location is touted as the new Lekki.
+                  </div>
+                </div>
+
+                <div class="moreProperty_div">
+                  <div class="moreProperty">
+                    <div class="moreProperty_btn">
+                      <a href="properties.html">KNOW MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="properties_img">
+                <img src="HaridaImages/house1.png" alt="Image 2" class="fade" />
+                <div class="properties_PContainer">
+                  <div class="properties_P">
+                    Harida Court 1 is the development of a beautiful residential
+                    houses in lekki county with a private swimmimg pool and it
+                    has a beautiful beach view located in Lekki County Estate.
+                    The location is touted as the new Lekki.
+                  </div>
+                </div>
+
+                <div class="moreProperty_div">
+                  <div class="moreProperty">
+                    <div class="moreProperty_btn">
+                      <a href="properties.html">KNOW MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
