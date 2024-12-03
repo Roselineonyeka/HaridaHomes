@@ -10,14 +10,33 @@ function showPage(pageId) {
   document.getElementById(pageId).style.display = "block";
 }
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const hamburger = document.querySelector(".hamburger_menuH");
+//   const menu = document.querySelector(".nav_bar_div");
+
+//   hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("open"); // Toggle 'open' class for the hamburger icon
+//     menu.classList.toggle("open"); // Toggle 'open' class for the side menu
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger_menuH");
   const menu = document.querySelector(".nav_bar_div");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open"); // Toggle 'open' class for the hamburger icon
-    menu.classList.toggle("open"); // Toggle 'open' class for the side menu
-  });
+  console.log("Hamburger menu:", hamburger); // Debugging: Check if the element is found
+  console.log("Navigation bar:", menu); // Debugging: Check if the element is found
+
+  if (hamburger && menu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      menu.classList.toggle("open");
+    });
+  } else {
+    console.error(
+      "One or more elements are not found. Check your HTML and class names."
+    );
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -354,20 +373,3 @@ function setupCarousel(carouselContainerSelector) {
 
 // Initial setup for carousels on page load
 setupCarousel(".carousel-container");
-
-// let next_property = document.getElementById("next_property");
-
-let text1 = document.getElementById("text1");
-let text2 = document.getElementById("text2");
-
-setInterval(() => {
-  if (text1.style.display === "none") {
-    text1.style.display = "inline";
-    text2.style.display = "none";
-  } else {
-    text1.style.display = "none";
-    text2.style.display = "inline";
-  }
-}, 6000);
-
-// Matches the animation duration
