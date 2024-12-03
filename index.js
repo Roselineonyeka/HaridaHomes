@@ -368,4 +368,6 @@ setInterval(() => {
     text1.style.display = "none";
     text2.style.display = "inline";
   }
-}, 6000); // Matches the animation duration
+}, 6000);
+
+// Matches the animation duration
