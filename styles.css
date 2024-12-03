@@ -1518,18 +1518,47 @@ button.next_property {
     left: 55%; /* Final position */
   }
 
-  .contact-container h3 {
-    font-size: 22px;
+  /* .contact-container h3 {
+    font-style: italic;
+    font-weight: 200;
+    opacity: 0.75;
+    margin: 5% auto 2%;
+    font-size: 26px;
+    color: #003366;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 8s steps(25, end) infinite,
+      blink-caret 0.75s step-end infinite;
+  } */
 
-    white-space: normal;
+  .contact-container h3 {
+    font-size: 18px;
+
+    /* white-space: normal;
     width: 60%;
 
+    animation: type 8s steps(20, end) infinite, blink-caret 8s step-end infinite; */
     /* margin: 3% auto 1%; */
-    animation: type 8s steps(20, end) infinite, blink-caret 8s step-end infinite;
   }
 
   /* Typing animation */
-  @keyframes type {
+  /* @keyframes type {
+    0% {
+      width: 0;
+    }
+    70% {
+      width: 100%;
+    }
+    90% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+ */
+
+  /* @keyframes type {
     0% {
       width: 0;
     }
@@ -1549,5 +1578,5 @@ button.next_property {
     50% {
       border-color: #003366;
     }
-  }
+  } */
 }

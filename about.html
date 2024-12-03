@@ -21,14 +21,17 @@
     <title>Harida Homes</title>
   </head>
   <body>
+    <script src="index.js"></script>
+
     <div id="nav-placeholder"></div>
     <script>
       fetch("nav.html")
         .then((response) => response.text())
-        .then(
-          (data) =>
-            (document.getElementById("nav-placeholder").innerHTML = data)
-        );
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          initializeHamburgerMenu();
+        });
     </script>
 
     <div id="chat-placeholder"></div>
@@ -175,6 +178,5 @@
             (document.getElementById("footer-placeholder").innerHTML = data)
         );
     </script>
-    <script src="index.js"></script>
   </body>
 </html>
